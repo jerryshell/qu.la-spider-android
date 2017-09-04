@@ -82,9 +82,8 @@ public class Spider {
         String content = document.select("#content").get(0).text();
         // 格式美化
         content = content.replaceAll(" 　　 　　    ", "\n\n");
+        content = content.replaceAll(" 　　 　　", "\n\n");
         content = content.replaceAll("    ", "");
-        // 去广告
-        content = content.split(" 　　 　　")[0];
         return new Chapter(title, content);
     }
 
