@@ -1,4 +1,4 @@
-package cn.jerryshell.spider_qula;
+package cn.jerryshell.spiderqula;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.widget.Toast;
 
 import java.io.IOException;
 
-import cn.jerryshell._qu_la_SpiderForJava.Chapter;
-import cn.jerryshell._qu_la_SpiderForJava.ChapterSummary;
-import cn.jerryshell._qu_la_SpiderForJava.Spider;
+import cn.jerryshell.spiderqula.spider.Chapter;
+import cn.jerryshell.spiderqula.spider.ChapterSummary;
+import cn.jerryshell.spiderqula.spider.Spider;
 
 public class ChapterActivity extends AppCompatActivity {
     private static final int WHAT_SET_CHAPTER = 1;
@@ -51,8 +51,8 @@ public class ChapterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter);
 
-        mTitleTextView = (TextView) findViewById(R.id.tv_title);
-        mContentTextView = (TextView) findViewById(R.id.tv_content);
+        mTitleTextView = findViewById(R.id.tv_title);
+        mContentTextView = findViewById(R.id.tv_content);
 
         int chapterSummaryPosition = getChapterSummaryPositionFormIntent();
         ChapterSummary chapterSummary = ChapterSummaryLab.getIdentity().getChapterSummaryList().get(chapterSummaryPosition);

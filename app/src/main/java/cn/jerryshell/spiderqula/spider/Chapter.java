@@ -1,4 +1,4 @@
-package cn.jerryshell._qu_la_SpiderForJava;
+package cn.jerryshell.spiderqula.spider;
 
 public class Chapter {
     private String title;

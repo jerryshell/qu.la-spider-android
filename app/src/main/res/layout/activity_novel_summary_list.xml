@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="cn.jerryshell.spider_qula.NovelSummaryListActivity">
+    tools:context="cn.jerryshell.spiderqula.NovelSummaryListActivity">
 
     <ListView
         android:id="@+id/lv_novel_summary"

@@ -1,4 +1,4 @@
-package cn.jerryshell.spider_qula;
+package cn.jerryshell.spiderqula;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,8 +20,8 @@ import android.widget.Toast;
 import java.io.IOException;
 import java.util.List;
 
-import cn.jerryshell._qu_la_SpiderForJava.NovelSummary;
-import cn.jerryshell._qu_la_SpiderForJava.Spider;
+import cn.jerryshell.spiderqula.spider.NovelSummary;
+import cn.jerryshell.spiderqula.spider.Spider;
 
 public class NovelSummaryListActivity extends AppCompatActivity {
     private static final int WHAT_SET_NOVEL_SUMMARY_LIST = 1;
@@ -48,7 +48,7 @@ public class NovelSummaryListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_novel_summary_list);
 
-        mNovelSummaryListView = (ListView) findViewById(R.id.lv_novel_summary);
+        mNovelSummaryListView = findViewById(R.id.lv_novel_summary);
         mNovelSummaryListView.setEmptyView(findViewById(R.id.empty));
         mNovelSummaryListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -79,7 +79,7 @@ public class NovelSummaryListActivity extends AppCompatActivity {
                 view = convertView;
             }
             NovelSummary novelSummary = getItem(position);
-            TextView titleTextView = (TextView) view.findViewById(R.id.tv_novel_summary_title);
+            TextView titleTextView = view.findViewById(R.id.tv_novel_summary_title);
             assert novelSummary != null;
             titleTextView.setText(novelSummary.getTitle());
             return view;

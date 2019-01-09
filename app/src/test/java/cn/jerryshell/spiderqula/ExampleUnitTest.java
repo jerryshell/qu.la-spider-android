@@ -1,4 +1,4 @@
-package cn.jerryshell.spider_qula;
+package cn.jerryshell.spiderqula;
 
 import org.junit.Test;
 

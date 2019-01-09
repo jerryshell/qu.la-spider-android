@@ -1,4 +1,4 @@
-package cn.jerryshell.spider_qula;
+package cn.jerryshell.spiderqula;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,9 +20,9 @@ import android.widget.Toast;
 import java.io.IOException;
 import java.util.List;
 
-import cn.jerryshell._qu_la_SpiderForJava.ChapterSummary;
-import cn.jerryshell._qu_la_SpiderForJava.NovelSummary;
-import cn.jerryshell._qu_la_SpiderForJava.Spider;
+import cn.jerryshell.spiderqula.spider.ChapterSummary;
+import cn.jerryshell.spiderqula.spider.NovelSummary;
+import cn.jerryshell.spiderqula.spider.Spider;
 
 public class ChapterSummaryListActivity extends AppCompatActivity {
     private static final int WHAT_SET_Chapter_SUMMARY_LIST = 1;
@@ -64,7 +64,7 @@ public class ChapterSummaryListActivity extends AppCompatActivity {
         int novelPosition = getNovelPositionFormIntent();
         NovelSummary novelSummary = mNovelSummaryLab.getNovelSummaryList().get(novelPosition);
 
-        mChapterSummaryListView = (ListView) findViewById(R.id.lv_novel_summary);
+        mChapterSummaryListView = findViewById(R.id.lv_novel_summary);
         mChapterSummaryListView.setEmptyView(findViewById(R.id.empty));
         mChapterSummaryListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

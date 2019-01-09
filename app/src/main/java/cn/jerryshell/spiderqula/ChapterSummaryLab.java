@@ -1,9 +1,9 @@
-package cn.jerryshell.spider_qula;
+package cn.jerryshell.spiderqula;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.jerryshell._qu_la_SpiderForJava.ChapterSummary;
+import cn.jerryshell.spiderqula.spider.ChapterSummary;
 
 class ChapterSummaryLab {
     private static final ChapterSummaryLab identity = new ChapterSummaryLab();

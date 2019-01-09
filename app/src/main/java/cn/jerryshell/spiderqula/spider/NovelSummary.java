@@ -1,10 +1,10 @@
-package cn.jerryshell._qu_la_SpiderForJava;
+package cn.jerryshell.spiderqula.spider;
 
-public class ChapterSummary {
+public class NovelSummary {
     private String title;
     private String href;
 
-    public ChapterSummary(String title, String href) {
+    public NovelSummary(String title, String href) {
         this.title = title;
         this.href = href;
     }
@@ -27,7 +27,7 @@ public class ChapterSummary {
 
     @Override
     public String toString() {
-        return "ChapterSummary{" +
+        return "NovelSummary{" +
                 "title='" + title + '\'' +
                 ", href='" + href + '\'' +
                 '}';

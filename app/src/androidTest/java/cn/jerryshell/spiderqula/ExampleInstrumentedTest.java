@@ -1,4 +1,4 @@
-package cn.jerryshell.spider_qula;
+package cn.jerryshell.spiderqula;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
