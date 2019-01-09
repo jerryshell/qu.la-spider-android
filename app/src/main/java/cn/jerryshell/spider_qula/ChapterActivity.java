@@ -16,12 +16,10 @@ import cn.jerryshell._qu_la_SpiderForJava.ChapterSummary;
 import cn.jerryshell._qu_la_SpiderForJava.Spider;
 
 public class ChapterActivity extends AppCompatActivity {
-    private TextView mTitleTextView;
-    private TextView mContentTextView;
-
     private static final int WHAT_SET_CHAPTER = 1;
     private static final int WHAT_GET_CHAPTER_FAIL = 2;
-
+    private TextView mTitleTextView;
+    private TextView mContentTextView;
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {

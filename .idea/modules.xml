@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Spider_qu.la.iml" filepath="$PROJECT_DIR$/Spider_qu.la.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spider-qu.la-android.iml" filepath="$PROJECT_DIR$/spider-qu.la-android.iml" />
     </modules>
   </component>
 </project>

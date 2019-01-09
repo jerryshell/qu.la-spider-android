@@ -24,11 +24,9 @@ import cn.jerryshell._qu_la_SpiderForJava.NovelSummary;
 import cn.jerryshell._qu_la_SpiderForJava.Spider;
 
 public class NovelSummaryListActivity extends AppCompatActivity {
-    private ListView mNovelSummaryListView;
-
     private static final int WHAT_SET_NOVEL_SUMMARY_LIST = 1;
     private static final int WHAT_GET_NOVEL_SUMMARY_FAIL = 2;
-
+    private ListView mNovelSummaryListView;
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {

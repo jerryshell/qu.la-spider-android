@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Spider {
-    private static String baseUrl = "http://www.qu.la";
+    private static String baseUrl = "https://www.qu.la";
     private static String paihangbangUrl = baseUrl + "/paihangbang/";
 
     private static Map<String, String> headersMap = new HashMap<>();
@@ -58,7 +58,7 @@ public class Spider {
         List<ChapterSummary> chapterSummaryList = new ArrayList<>();
         Elements div_dd_a = document.select("div dd a");
         for (Element element : div_dd_a) {
-            System.out.println(element);
+//            System.out.println(element);
             String title = element.text();
             String href = baseUrl + element.attr("href");
             ChapterSummary chapterSummary = new ChapterSummary(title, href);

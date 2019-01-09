@@ -25,13 +25,10 @@ import cn.jerryshell._qu_la_SpiderForJava.NovelSummary;
 import cn.jerryshell._qu_la_SpiderForJava.Spider;
 
 public class ChapterSummaryListActivity extends AppCompatActivity {
-    private ListView mChapterSummaryListView;
-
-    private NovelSummaryLab mNovelSummaryLab = NovelSummaryLab.getIdentity();
-
     private static final int WHAT_SET_Chapter_SUMMARY_LIST = 1;
     private static final int WHAT_GET_Chapter_SUMMARY_FAIL = 2;
-
+    private ListView mChapterSummaryListView;
+    private NovelSummaryLab mNovelSummaryLab = NovelSummaryLab.getIdentity();
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
